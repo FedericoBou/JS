@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora-Simple</title>
+    <script>
+
+        //Funciones
+
+        function suma(num1, num2) {
+            alert("La suma es: " + (num1+num2));
+            
+        }
+        function resta(num1, num2) {
+            alert("La resta es: " + (num1-num2));
+            
+        }
+        function multiplicar(num1, num2) {
+            alert("La mutiplicación es: " + (num1*num2));
+            
+        }
+        function dividir(num1, num2) {
+            alert("La división es: " + (num1/num2));
+            
+        }
+
+
+
+    do{
+        //Variables
+
+        var operacion=prompt("Que operación deseeas reaizar?");
+        var operador1=parseInt(prompt("Indroduce el primer nª"));
+        var operador2=parseInt(prompt("introduce el segundo nª"));
+        var repetir="si";
+
+        //Bucle de operaciones
+
+        if (operacion=="sumar") {
+            suma(operador1, operador2);
+        }
+        else if (operacion=="restar") {
+            resta(operador1, operador2);
+        }
+        else if (operacion=="multiplicar") {
+            resta(operador1, operador2);
+        }
+        else if (operacion=="dividir") {
+            resta(operador1, operador2);
+        }
+        else{
+            alert("Esta operación no esta contempleda");
+        }
+        
+        repetir=prompt("Repetir?");
+    }
+    
+    while(repetir=="si");
+    
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
